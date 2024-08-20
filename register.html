@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./reg.css">
+</head>
+<body>
+    <header id="bar">
+        <nav >
+            <a href="./index.html">Home</a>
+            <a href="./register.html">Register</a>
+            <a href="./login.html">Login</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./aboutus.html">About Us</a>
+        </nav>
+    </header>
+    <h1>Registration Form</h1>
+    <div id="form">
+        <form action="regsub.html" method="get">
+            <fieldset>
+                <legend>Personal details</legend>
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div class="form-group">
+                    <label for="DOB">Date of Birth:</label>
+                    <input type="date" id="DOB" name="DOB" required>
+                </div>
+                <div id="radio" class="groups">
+                    <label for="gender">Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Educational details</legend>
+                <div class="form-group">
+                    <label for="college">College Name:</label>
+                    <input type="text" id="college" name="college" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year of Studying:</label>
+                    <select id="year" name="year" required>
+                        <option value="First year">I</option>
+                        <option value="Second year">II</option>
+                        <option value="Third year">III</option>
+                        <option value="Fourth year">IV</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Submit</legend>
+                <div class="form-group">
+                    <label for="regno">Registration Number:</label>
+                    <input type="text" id="regno" name="regno" required>
+                </div>
+                <div class="form-group">
+                    <label for="pick">Picture:</label>
+                    <input type="file" id="pick" name="profile" required>
+                </div>
+                <div id="buttons">
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
